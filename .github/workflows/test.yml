@@ -7,6 +7,12 @@ on:
       - 'releases/*'
 
 jobs:
+  # lint
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: swinton/actionlinter@main
+
   # unit tests
   units:
     runs-on: ubuntu-latest
